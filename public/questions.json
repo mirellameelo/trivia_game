@@ -1,0 +1,200 @@
+{
+    "Science": [
+        {
+            "question": "What is the chemical symbol for water?",
+            "right_answer": "H2O",
+            "wrong_answers": ["O2", "CO2", "H2", "OH"]
+        },
+        {
+            "question": "What planet is known as the Red Planet?",
+            "right_answer": "Mars",
+            "wrong_answers": ["Earth", "Jupiter", "Venus", "Saturn"]
+        },
+        {
+            "question": "What is the hardest natural substance on Earth?",
+            "right_answer": "Diamond",
+            "wrong_answers": ["Gold", "Iron", "Platinum", "Quartz"]
+        },
+        {
+            "question": "How many bones are there in the adult human body?",
+            "right_answer": "206",
+            "wrong_answers": ["210", "180", "195", "220"]
+        },
+        {
+            "question": "What gas do plants absorb from the atmosphere?",
+            "right_answer": "Carbon Dioxide",
+            "wrong_answers": ["Oxygen", "Nitrogen", "Hydrogen", "Methane"]
+        },
+        {
+            "question": "What is the speed of light?",
+            "right_answer": "299,792,458 m/s",
+            "wrong_answers": ["150,000,000 m/s", "299,792 m/s", "300,000,000 m/s", "150,000 m/s"]
+        },
+        {
+            "question": "What element does 'O' represent on the periodic table?",
+            "right_answer": "Oxygen",
+            "wrong_answers": ["Gold", "Osmium", "Oganesson", "Ozone"]
+        },
+        {
+            "question": "What is the nearest star to Earth?",
+            "right_answer": "Sun",
+            "wrong_answers": ["Proxima Centauri", "Sirius", "Alpha Centauri", "Betelgeuse"]
+        },
+        {
+            "question": "What part of the cell contains the genetic material?",
+            "right_answer": "Nucleus",
+            "wrong_answers": ["Ribosome", "Cytoplasm", "Mitochondria", "Cell Membrane"]
+        },
+        {
+            "question": "What is the chemical formula for table salt?",
+            "right_answer": "NaCl",
+            "wrong_answers": ["KCl", "NaOH", "HCl", "Na2CO3"]
+        }
+    ],
+    "History": [
+        {
+            "question": "Who was the first president of the United States?",
+            "right_answer": "George Washington",
+            "wrong_answers": ["John Adams", "Thomas Jefferson", "James Madison", "James Monroe"]
+        },
+        {
+            "question": "In what year did the Titanic sink?",
+            "right_answer": "1912",
+            "wrong_answers": ["1905", "1918", "1920", "1908"]
+        },
+        {
+            "question": "Who was the British Prime Minister during World War II?",
+            "right_answer": "Winston Churchill",
+            "wrong_answers": ["Neville Chamberlain", "Clement Attlee", "Harold Macmillan", "Anthony Eden"]
+        },
+        {
+            "question": "What ancient civilization built the Machu Picchu?",
+            "right_answer": "Inca",
+            "wrong_answers": ["Aztec", "Maya", "Olmec", "Toltec"]
+        },
+        {
+            "question": "Who was the first man to step on the moon?",
+            "right_answer": "Neil Armstrong",
+            "wrong_answers": ["Buzz Aldrin", "Michael Collins", "Yuri Gagarin", "John Glenn"]
+        },
+        {
+            "question": "In what year did World War I begin?",
+            "right_answer": "1914",
+            "wrong_answers": ["1912", "1916", "1918", "1920"]
+        },
+        {
+            "question": "What empire was ruled by Genghis Khan?",
+            "right_answer": "Mongol Empire",
+            "wrong_answers": ["Roman Empire", "Ottoman Empire", "Persian Empire", "British Empire"]
+        },
+        {
+            "question": "What year did the Berlin Wall fall?",
+            "right_answer": "1989",
+            "wrong_answers": ["1987", "1990", "1991", "1985"]
+        },
+        {
+            "question": "Who discovered America in 1492?",
+            "right_answer": "Christopher Columbus",
+            "wrong_answers": ["Leif Erikson", "Amerigo Vespucci", "Ferdinand Magellan", "Vasco da Gama"]
+        },
+        {
+            "question": "Who was the queen of Ancient Egypt?",
+            "right_answer": "Cleopatra",
+            "wrong_answers": ["Nefertiti", "Hatshepsut", "Ankhesenamun", "Tawosret"]
+        }
+    ],
+    "Computer Science": [
+        {
+            "question": "What does CPU stand for?",
+            "right_answer": "Central Processing Unit",
+            "wrong_answers": ["Central Programming Unit", "Computer Personal Unit", "Central Processor Unit", "Control Processing Unit"]
+        },
+        {
+            "question": "What does HTML stand for?",
+            "right_answer": "HyperText Markup Language",
+            "wrong_answers": ["HyperText Machine Language", "HyperText and links Markup Language", "Home Tool Markup Language", "Hyper Transfer Markup Language"]
+        },
+        {
+            "question": "What does RAM stand for?",
+            "right_answer": "Random Access Memory",
+            "wrong_answers": ["Read Access Memory", "Run Access Memory", "Random Allocation Memory", "Rapid Access Memory"]
+        },
+        {
+            "question": "What is the main function of an operating system?",
+            "right_answer": "Manage computer resources",
+            "wrong_answers": ["Create software", "Manage databases", "Manage user data", "Run applications"]
+        },
+        {
+            "question": "What does HTTP stand for?",
+            "right_answer": "HyperText Transfer Protocol",
+            "wrong_answers": ["HyperText Transmission Protocol", "HyperText Transport Protocol", "HighText Transfer Protocol", "Hyper Transfer Text Protocol"]
+        },
+        {
+            "question": "Who is known as the father of computer science?",
+            "right_answer": "Alan Turing",
+            "wrong_answers": ["Bill Gates", "Steve Jobs", "Charles Babbage", "John von Neumann"]
+        },
+        {
+            "question": "What programming language is known for its use in web development?",
+            "right_answer": "JavaScript",
+            "wrong_answers": ["Python", "Java", "C++", "Ruby"]
+        },
+        {
+            "question": "What is the name of the first electronic general-purpose computer?",
+            "right_answer": "ENIAC",
+            "wrong_answers": ["UNIVAC", "IBM PC", "Apple I", "Colossus"]
+        },
+        {
+            "question": "What does SQL stand for?",
+            "right_answer": "Structured Query Language",
+            "wrong_answers": ["Standard Query Language", "Simple Query Language", "Sequential Query Language", "Syntax Query Language"]
+        },
+        {
+            "question": "What is the name of the most popular version control system?",
+            "right_answer": "Git",
+            "wrong_answers": ["Mercurial", "SVN", "CVS", "Bitbucket"]
+        }
+    ],
+    "Music": [
+        {
+            "question": "Who is known as the King of Pop?",
+            "right_answer": "Michael Jackson",
+            "wrong_answers": ["Elvis Presley", "Prince", "Madonna", "Elton John"]
+        },
+        {
+            "question": "What is the capital of classical music?",
+            "right_answer": "Vienna",
+            "wrong_answers": ["Berlin", "Paris", "London", "Rome"]
+        },
+        {
+            "question": "What instrument has 88 keys?",
+            "right_answer": "Piano",
+            "wrong_answers": ["Violin", "Flute", "Guitar", "Trumpet"]
+        },
+        {
+            "question": "Who composed the Four Seasons?",
+            "right_answer": "Vivaldi",
+            "wrong_answers": ["Bach", "Mozart", "Beethoven", "Haydn"]
+        },
+        {
+            "question": "Who is the lead singer of the band Queen?",
+            "right_answer": "Freddie Mercury",
+            "wrong_answers": ["David Bowie", "Mick Jagger", "Robert Plant", "Roger Daltrey"]
+        },
+        {
+            "question": "What genre of music is associated with Bob Marley?",
+            "right_answer": "Reggae",
+            "wrong_answers": ["Rock", "Jazz", "Blues", "Hip-hop"]
+        },
+        {
+            "question": "Who is the composer of 'Ode to Joy'?",
+            "right_answer": "Beethoven",
+            "wrong_answers": ["Bach", "Mozart", "Schubert", "Tchaikovsky"]
+        },
+        {
+            "question": "What is the highest male singing voice?",
+            "right_answer": "Tenor",
+            "wrong_answers": ["Baritone", "Bass", "Soprano", "Alto"]
+        }
+    ]
+}

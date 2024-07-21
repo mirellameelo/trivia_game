@@ -1,0 +1,27 @@
+.answer-button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .answer-button.selected {
+    background-color: darkgray;
+  }
+  
+  .answer-button.correct {
+    background-color: green;
+  }
+  
+  .answer-button.wrong {
+    background-color: red;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
