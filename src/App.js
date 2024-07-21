@@ -46,6 +46,12 @@ const App = () => {
     }));
   };
 
+  const areAllQuestionsDisplayed = (category) => {
+    return (
+      questions[category]?.length === (displayedQuestions[category]?.length || 0)
+    );
+  };
+
   const currentQuestion = questions[selectedCategory]?.[currentQuestionIndex];
 
   return (
@@ -54,7 +60,11 @@ const App = () => {
         <div>
           <h1>Select a Category</h1>
           {categories.map((category) => (
-            <button key={category} onClick={() => handleCategorySelect(category)}>
+            <button
+              key={category}
+              onClick={() => handleCategorySelect(category)}
+              disabled={areAllQuestionsDisplayed(category)}
+            >
               {category}
             </button>
           ))}
