@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Question.css';
 
-const Question = ({ questionData, onMenu }) => {
+const Question = ({ questionData, onMenu, onConfirmChoice }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showResult, setShowResult] = useState(false);
 
@@ -11,6 +11,7 @@ const Question = ({ questionData, onMenu }) => {
 
   const handleConfirmChoice = () => {
     setShowResult(true);
+    onConfirmChoice();
   };
 
   return (

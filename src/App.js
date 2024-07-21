@@ -5,8 +5,9 @@ import Question from './Question';
 const App = () => {
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [questions, setQuestions] = useState([]);
+  const [questions, setQuestions] = useState({});
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [displayedQuestions, setDisplayedQuestions] = useState({});
 
   useEffect(() => {
     fetch('/questions.json')
@@ -17,14 +18,27 @@ const App = () => {
       });
   }, []);
 
-  const handleCategorySelect = (category) => {
-    setSelectedCategory(category);
-    setCurrentQuestionIndex(0);
-  };
-
   const handleMenu = () => {
     setSelectedCategory(null);
   };
+
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category);
+    setCurrentQuestionIndex(0);
+    setDisplayedQuestions((prev) => ({
+      ...prev,
+      [category]: []
+    }));
+  };
+
+  const handleQuestionDisplayed = (index) => {
+    setDisplayedQuestions((prev) => ({
+      ...prev,
+      [selectedCategory]: [...prev[selectedCategory], index]
+    }));
+  };
+
+  const currentQuestion = questions[selectedCategory]?.[currentQuestionIndex];
 
   return (
     <div className="App">
@@ -38,10 +52,13 @@ const App = () => {
           ))}
         </div>
       ) : (
-        <Question
-          questionData={questions[selectedCategory][currentQuestionIndex]}
-          onMenu={handleMenu}
-        />
+        currentQuestion && (
+          <Question
+            questionData={currentQuestion}
+            onMenu={handleMenu}
+            onConfirmChoice={() => handleQuestionDisplayed(currentQuestionIndex)}
+          />
+        )
       )}
     </div>
   );
