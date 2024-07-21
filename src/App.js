@@ -18,16 +18,24 @@ const App = () => {
       });
   }, []);
 
+  useEffect(() => {
+    console.log('Displayed Questions:', displayedQuestions);
+  }, [displayedQuestions]);
+
   const handleMenu = () => {
     setSelectedCategory(null);
   };
 
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
-    setCurrentQuestionIndex(0);
+    const displayedIndexes = displayedQuestions[category] || [];
+    const nextIndex = questions[category].findIndex(
+      (_, index) => !displayedIndexes.includes(index)
+    );
+    setCurrentQuestionIndex(nextIndex !== -1 ? nextIndex : 0); // Fallback to 0 if all questions have been displayed
     setDisplayedQuestions((prev) => ({
       ...prev,
-      [category]: []
+      [category]: displayedIndexes
     }));
   };
 
