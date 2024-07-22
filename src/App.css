@@ -12,6 +12,13 @@ body {
   padding: 20px;
 }
 
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+}
+
 /* Button styles */
 button {
   background-color: #4c99a3; /* Light purple */
@@ -27,11 +34,11 @@ button {
 
 .category-button {
   background-color: #4c99a3; /* Light purple */
-  font-size: 20px; /* Updated font size */
+  font-size: 80px; /* Updated font size */
   padding: 15px 30px;
   margin: 10px;
-  width: 250px; /* Fixed width */
-  height: 50px; /* Fixed height */
+  width: 520px; /* Fixed width */
+  height: 220px; /* Fixed height */
   display: inline-block;
   text-align: center;
 }

@@ -58,17 +58,19 @@ const App = () => {
     <div className="App">
       {!selectedCategory ? (
         <div>
-          <h1>Select a Category</h1>
-          {categories.map((category) => (
-            <button
-              key={category}
-              className="category-button"
-              onClick={() => handleCategorySelect(category)}
-              disabled={areAllQuestionsDisplayed(category)}
-            >
-              {category}
-            </button>
-          ))}
+          <h1>Categorias</h1>
+          <div className="category-container">
+            {categories.map((category) => (
+              <button
+                key={category}
+                className="category-button"
+                onClick={() => handleCategorySelect(category)}
+                disabled={areAllQuestionsDisplayed(category)}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
         </div>
       ) : (
         currentQuestion && (
