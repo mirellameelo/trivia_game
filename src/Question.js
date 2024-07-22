@@ -1,9 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Question.css';
 
 const Question = ({ questionData, onMenu, onConfirmChoice }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showResult, setShowResult] = useState(false);
+  const [shuffledAnswers, setShuffledAnswers] = useState([]);
+
+  useEffect(() => {
+    const answers = [questionData.right_answer, ...questionData.wrong_answers];
+    setShuffledAnswers(shuffleArray(answers));
+  }, [questionData]);
+
+  const shuffleArray = (array) => {
+    return array.sort(() => Math.random() - 0.5);
+  };
 
   const handleAnswerSelect = (answer) => {
     setSelectedAnswer(answer);
@@ -17,7 +27,7 @@ const Question = ({ questionData, onMenu, onConfirmChoice }) => {
   return (
     <div>
       <h1>{questionData.question}</h1>
-      {[questionData.right_answer, ...questionData.wrong_answers].map((answer) => (
+      {shuffledAnswers.map((answer) => (
         <button
           key={answer}
           onClick={() => handleAnswerSelect(answer)}
