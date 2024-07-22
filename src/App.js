@@ -62,6 +62,7 @@ const App = () => {
           {categories.map((category) => (
             <button
               key={category}
+              className="category-button"
               onClick={() => handleCategorySelect(category)}
               disabled={areAllQuestionsDisplayed(category)}
             >

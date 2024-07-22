@@ -16,7 +16,7 @@ const Question = ({ questionData, onMenu, onConfirmChoice }) => {
 
   return (
     <div>
-      <h2>{questionData.question}</h2>
+      <h1>{questionData.question}</h1>
       {[questionData.right_answer, ...questionData.wrong_answers].map((answer) => (
         <button
           key={answer}

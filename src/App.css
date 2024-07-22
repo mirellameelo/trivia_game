@@ -1,10 +1,72 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* App styles */
 .App {
   text-align: center;
   padding: 20px;
 }
 
+/* Button styles */
 button {
-  margin: 10px;
+  background-color: #4c99a3; /* Light purple */
+  border: none;
+  color: white;
   padding: 10px 20px;
+  margin: 20px;
   font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.category-button {
+  background-color: #4c99a3; /* Light purple */
+  font-size: 20px; /* Updated font size */
+  padding: 15px 30px;
+  margin: 10px;
+  width: 250px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  display: inline-block;
+  text-align: center;
+}
+
+.category-button:disabled {
+  background-color: gray; /* Gray color for disabled state */
+  cursor: not-allowed;
+}
+
+h1 {
+  color: #641079; /* Dark purple */
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #641079; /* Dark purple */
+}
+
+button:disabled {
+  background-color: #4c99a3;
+  cursor: not-allowed;
+}
+
+/* Selected answer button */
+.answer-button.selected {
+  background-color: #e1ee68; /* Dark purple */
+}
+
+/* Correct answer button */
+.answer-button.correct {
+  background-color: #32cd32; /* Lime green for correct answer */
+}
+
+/* Wrong answer button */
+.answer-button.wrong {
+  background-color: #ff6347; /* Tomato red for wrong answer */
 }

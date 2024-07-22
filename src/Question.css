@@ -3,20 +3,20 @@
     width: 100%;
     margin: 10px 0;
     padding: 10px;
-    font-size: 16px;
+    font-size: 70px;
     text-align: left;
   }
   
   .answer-button.selected {
-    background-color: darkgray;
+    background-color: #641079;
   }
   
   .answer-button.correct {
-    background-color: green;
+    background-color: rgba(48, 182, 48, 0.603);
   }
   
   .answer-button.wrong {
-    background-color: red;
+    background-color: rgba(196, 48, 48, 0.568);
   }
   
   button {
